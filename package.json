@@ -1,8 +1,10 @@
 {
   "name": "robofriends",
+  "homepage": "https://matheusgomes062.github.io/robofriends",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "json-server": "^0.15.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
@@ -10,6 +12,8 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
