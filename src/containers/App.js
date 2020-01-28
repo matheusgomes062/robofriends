@@ -14,7 +14,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3000/users")
+    fetch(
+      "https://my-json-server.typicode.com/matheusgomes062/api-robofriends/users"
+    )
       .then(response => response.json())
       .then(users => {
         this.setState({ robots: users });
